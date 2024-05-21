@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN mvn dependency:resolve
+RUN mvn clean install
 
 FROM adoptopenjdk:11-jre-hotspot
 
